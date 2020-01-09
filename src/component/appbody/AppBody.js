@@ -7,7 +7,7 @@ function AppBody() {
     <div id="table" className="mx-auto">       
          <table className="table table-responsive table-bordered text-center">
             <tr>
-                    <Link to="#"><td><p>Add</p> <span className="fa fa-plus fa-3x"></span> </td></Link>
+                    <Link to="/add"><td><p>Add</p> <span className="fa fa-plus fa-3x"></span> </td></Link>
                     <Link to="#"><td><p>Buy</p> <span className="fa fa-shopping-bag fa-3x"></span> </td></Link>
             </tr>
             <tr>
