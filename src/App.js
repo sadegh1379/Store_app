@@ -18,7 +18,9 @@ function App() {
 
   const valueInputContext = {
     setName,
-    setCost
+    setCost,
+    name,
+    cost
   }
   return (
   <InputContext.Provider value={valueInputContext}>

@@ -4,9 +4,8 @@ import './add.css';
 
 function Add() {
     // give context
-    const contextList = useContext(InputContext);
+    const { setName , setCost , name , cost} = useContext(InputContext);
 
-    console.log(contextList);
     return (
         <div className="mt-4">
            
@@ -15,16 +14,13 @@ function Add() {
                     <form  className="mx-auto text-center">
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input type="text" id="name" className="form-control" placeholder="enter name... "/>
+                                <input value={name} onChange={(e)=>setName(e.target.value)}  type="text" id="name" className="form-control" placeholder="enter name... "/>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="name">Cost</label>
-                                <input type="text" id="name" className="form-control" placeholder="enter Cost... "/>
+                                <input value={cost} onChange={(e)=>setCost(e.target.value)} type="number" id="name" className="form-control" placeholder="enter Cost... "/>
                             </div>
-                            <div className="form-group">
-                                <label htmlFor="name">Name</label>
-                                <input type="text" id="name" className="form-control" placeholder="enter name your "/>
-                            </div>
+                           
                         <button type="submit" className="btn btn-block btn-success mt-4">Add </button>
                     </form>
             </div>
