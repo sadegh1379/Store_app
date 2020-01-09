@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './appbody.css';
 
 function AppBody() {
@@ -6,12 +7,12 @@ function AppBody() {
     <div id="table" className="mx-auto">       
          <table className="table table-responsive table-bordered text-center">
             <tr>
-                    <a href="#"><td><p>Add</p> <span className="fa fa-plus fa-3x"></span> </td></a>
-                    <a href="#"><td><p>Buy</p> <span className="fa fa-shopping-bag fa-3x"></span> </td></a>
+                    <Link to="#"><td><p>Add</p> <span className="fa fa-plus fa-3x"></span> </td></Link>
+                    <Link to="#"><td><p>Buy</p> <span className="fa fa-shopping-bag fa-3x"></span> </td></Link>
             </tr>
             <tr>
-                    <a href="#"><td><p>Remove</p> <span className="fa fa-trash fa-3x"></span> </td></a>
-                    <a href="#"><td><p>About</p> <span className="fa fa-question fa-3x"></span> </td></a>
+                    <Link to="#"><td><p>Remove</p> <span className="fa fa-trash fa-3x"></span> </td></Link>
+                    <Link to="/about"><td><p>About</p> <span className="fa fa-question fa-3x"></span> </td></Link>
             </tr>
         </table>
      
