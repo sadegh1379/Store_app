@@ -4,6 +4,7 @@ import './component/bootstrap/bootstrap.css';
 import Navbar from './component/navbar/Navbar';
 import AppBody from './component/appbody/AppBody';
 import About from './component/about/About';
+import PageNotFound from './component/pagenot/PageNotFound';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
                  <Switch>
                      <Route exact path="/" component={AppBody}/>
                      <Route exact path="/about" component={About}/>
+                     <Route  component={PageNotFound}/>
                  </Switch>
           </div>
         
