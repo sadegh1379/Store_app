@@ -4,24 +4,28 @@ import './add.css';
 
 function Add() {
     // give context
-    const { setName , setCost , name , cost} = useContext(InputContext);
+    const { setName , setCost , name , cost , color , setColor , handleSubmit} = useContext(InputContext);
 
     return (
         <div className="mt-4">
            
-            <div className="jumbotron text-white">
+            <div className="jumbotron  jumbotronAdd text-white">
                      <h1 className="text-center  mb-4">Adding goods</h1>
-                    <form  className="mx-auto text-center">
+                    <form onSubmit={(e)=>handleSubmit(e)}  className="mx-auto text-center">
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input value={name} onChange={(e)=>setName(e.target.value)}  type="text" id="name" className="form-control" placeholder="enter name... "/>
+                                <input required value={name} onChange={(e)=>setName(e.target.value)}  type="text" id="name" className="form-control" placeholder="enter name... "/>
                             </div>
                             <div className="form-group">
-                                <label htmlFor="name">Cost</label>
-                                <input value={cost} onChange={(e)=>setCost(e.target.value)} type="number" id="name" className="form-control" placeholder="enter Cost... "/>
+                                <label htmlFor="cost">Cost</label>
+                                <input required value={cost} onChange={(e)=>setCost(e.target.value)} type="number" id="cost" className="form-control" placeholder="enter Cost... "/>
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="color">Color</label>
+                                <input required value={color} onChange={(e)=>setColor(e.target.value)} type="text" id="color" className="form-control" placeholder="enter Cost... "/>
                             </div>
                            
-                        <button type="submit" className="btn btn-block btn-success mt-4">Add </button>
+                        <button type="submit" className="btn btnAdd btn-block btn-success mt-4">Add </button>
                     </form>
             </div>
         </div>

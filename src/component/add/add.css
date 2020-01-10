@@ -1,10 +1,14 @@
-.jumbotron{
+.jumbotronAdd{
     box-shadow:  0 0 20px rgb(187, 140, 39);
 }
-.btn{
+.btnAdd{
     box-shadow:  0 0 20px rgb(187, 140, 39) inset;
 }
 .form-control{
     width: 70%;
     margin: 0 auto;
+}
+
+.form-control[type = "number"]{
+    text-align: center;
 }

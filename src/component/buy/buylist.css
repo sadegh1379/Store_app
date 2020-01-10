@@ -1,0 +1,10 @@
+#card-mobile:hover{
+    box-shadow:  0 0 15px rgb(236, 173, 37) inset;
+}
+.jumbotronBuy{
+    box-shadow:  0 0 20px rgb(187, 140, 39);
+}
+
+#card-mobile{
+    padding: 30px 5px;
+}
