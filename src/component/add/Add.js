@@ -10,7 +10,7 @@ function Add() {
         <div className="mt-4">
            
             <div className="jumbotron  jumbotronAdd text-white">
-                     <h1 className="text-center  mb-4">Adding goods</h1>
+                     <h1 className="text-center  mb-4">Adding to Store</h1>
                     <form onSubmit={(e)=>handleSubmit(e)}  className="mx-auto text-center">
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
@@ -25,7 +25,7 @@ function Add() {
                                 <input required value={color} onChange={(e)=>setColor(e.target.value)} type="text" id="color" className="form-control" placeholder="enter Cost... "/>
                             </div>
                            
-                        <button type="submit" className="btn btnAdd btn-block btn-success mt-4">Add </button>
+                        <button type="submit" className="btn btnAdd btn-block btn- mt-4">Add </button>
                     </form>
             </div>
         </div>
