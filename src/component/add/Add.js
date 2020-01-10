@@ -22,7 +22,7 @@ function Add() {
                             </div>
                             <div className="form-group">
                                 <label htmlFor="color">Color</label>
-                                <input required value={color} onChange={(e)=>setColor(e.target.value)} type="text" id="color" className="form-control" placeholder="enter Cost... "/>
+                                <input required value={color} onChange={(e)=>setColor(e.target.value)} type="text" id="color" className="form-control" placeholder="enter color... "/>
                             </div>
                            
                         <button type="submit" className="btn btnAdd btn-block btn- mt-4">Add </button>

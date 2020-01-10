@@ -82,8 +82,7 @@ function App() {
                           <Route  component={PageNotFound}/>
                       </Switch>
                       
-                </div>
-              
+                </div>     
               </div>
           </Router>
         </ListContext.Provider>
