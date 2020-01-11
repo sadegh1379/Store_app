@@ -13,7 +13,7 @@ function AppBody() {
                     <Link to="/buy"><td><p>Buy</p> <span className="fa fa-shopping-bag fa-3x"></span> </td></Link>
             </tr>
             <tr>
-                    <Link to="#"><td><p>Remove</p> <span className="fa fa-trash fa-3x"></span> </td></Link>
+                    <Link to="/remove"><td><p>Remove</p> <span className="fa fa-trash fa-3x"></span> </td></Link>
                     <Link to="/about"><td><p>About</p> <span className="fa fa-question fa-3x"></span> </td></Link>
             </tr>
             </tbody>

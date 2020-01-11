@@ -17,13 +17,13 @@ function Buy() {
         <div style={myStyle} className="jumbotron jumbotronBuy mt-4 mx-auto text-center">
           
             {
-                list.map(
+               list.length > 0? list.map(
                     (lis , index)=>{
                         return(
                                 <BuyList key={index} index={index} name={lis.name} cost={lis.cost} color={lis.color}/>
                         )
                     }
-                )
+                ) : <h6 className=" text-center text-white mx-auto">There is nothing yet...</h6>
             }
         </div>
     )

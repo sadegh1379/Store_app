@@ -1,8 +1,12 @@
-import React   , { useContext }from 'react';
+import React   , { useContext , useRef }from 'react';
 import { InputContext } from '../../Context';
 import './add.css';
 
 function Add() {
+    
+    // use ref 
+    const inputRef = useRef();
+
     // give context
     const { setName , setCost , name , cost , color , setColor , handleSubmit} = useContext(InputContext);
 
@@ -11,10 +15,10 @@ function Add() {
            
             <div className="jumbotron  jumbotronAdd text-white">
                      <h1 className="text-center  mb-4">Adding to Store</h1>
-                    <form onSubmit={(e)=>handleSubmit(e)}  className="mx-auto text-center">
+                    <form onSubmit={(e)=>{handleSubmit(e) ; inputRef.current.focus();}}  className="mx-auto text-center">
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input required value={name} onChange={(e)=>setName(e.target.value)}  type="text" id="name" className="form-control" placeholder="enter name... "/>
+                                <input ref={inputRef} required value={name} onChange={(e)=>setName(e.target.value)}  type="text" id="name" className="form-control" placeholder="enter name... "/>
                             </div>
                             <div className="form-group">
                                 <label htmlFor="cost">Cost</label>

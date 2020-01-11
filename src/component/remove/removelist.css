@@ -1,0 +1,11 @@
+.jumbotronRemove{
+    box-shadow:  0 0 20px rgb(187, 140, 39);
+}
+.jumbotronRemove ul li{
+    background-color: rgb(89, 97, 47) !important;
+    font-weight: bolder;
+    font-size: large;
+}
+.text-red{
+    color:red;
+}

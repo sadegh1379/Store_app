@@ -9,6 +9,7 @@ import About from './component/about/About';
 import Buy from './component/buy/Buy';
 import PageNotFound from './component/pagenot/PageNotFound';
 import Add from './component/add/Add';
+import RemoveList from './component/remove/RemoveList';
 
 function App() {
   
@@ -28,7 +29,6 @@ function App() {
     e.preventDefault();
     const newList = [...list , {name , cost , color}];
     setList(newList);
-    console.log(list);
     setMobileListInLocalStorage("mobileList" , list);
     setName('');
     setCost(0);
@@ -47,9 +47,18 @@ function App() {
    window.localStorage.setItem(localname , JSON.stringify(value));
  }
 
+ // handle remove
+ function handleRemove(index){
+   let oldList = [...list];
+   let newList = oldList.filter((_,i)=> i !== index);
+   setList(newList);
+   setMobileListInLocalStorage("mobileList" , list);
+ } 
+
  // value input context
   const valueInputContext = {
     handleSubmit,
+    handleRemove,
     setName,
     setCost,
     setColor,
@@ -79,6 +88,7 @@ function App() {
                           <Route exact path="/about" component={About}/>
                           <Route exact path="/add" component={Add}/>
                           <Route exact path="/buy" component={Buy}/>
+                          <Route exact path="/remove" component={RemoveList}/>
                           <Route  component={PageNotFound}/>
                       </Switch>
                       
