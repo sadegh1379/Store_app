@@ -8,7 +8,7 @@ function Remove({name , color , cost , handleRemove , index}) {
                 {
                     `Name: ${name} ${" --- "} Cost : ${ cost } ${" --- "} ${"   "} Color :${color}`
                 }
-                <i onClick={()=>handleRemove(index)} className="fa fa-trash float-right text-white" style={{cursor:'pointer'}}></i>
+                <button onClick={()=>handleRemove(index)} className="btn btn-outline-primary float-right"><i  className="fa fa-trash float-right text-white" style={{cursor:'pointer'}}></i></button>
             </li>
         </React.Fragment>
     )
