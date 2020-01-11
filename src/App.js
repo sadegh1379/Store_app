@@ -16,7 +16,7 @@ function App() {
   // state inputs
   const [name ,setName] = useState('')
   const [color , setColor] = useState('')
-  const [cost , setCost] = useState(0);
+  const [cost , setCost] = useState();
 
   // list state
   const [list , setList] = useState(getLocalStorage("mobileList"));
@@ -29,9 +29,9 @@ function App() {
     e.preventDefault();
     const newList = [...list , {name , cost , color}];
     setList(newList);
-    setMobileListInLocalStorage("mobileList" , list);
+    setMobileListInLocalStorage("mobileList" , newList);
     setName('');
-    setCost(0);
+    setCost('');
     setColor('');
 
     
@@ -52,7 +52,7 @@ function App() {
    let oldList = [...list];
    let newList = oldList.filter((_,i)=> i !== index);
    setList(newList);
-   setMobileListInLocalStorage("mobileList" , list);
+   setMobileListInLocalStorage("mobileList" , newList);
  } 
 
  // value input context

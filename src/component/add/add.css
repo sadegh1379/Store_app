@@ -12,5 +12,15 @@
 .form-control{
     text-align: center;
     font-weight: bolder;
+    background-color: white !important;
+    color:black;
+}
+.form-control:focus{
+    box-shadow:  0 0 20px rgb(240, 164, 1) inset;
+}
+.alert-red{
+    display: none;
+    background-color: rgb(65, 145, 65);
     color:white;
+    font-weight: bolder;
 }

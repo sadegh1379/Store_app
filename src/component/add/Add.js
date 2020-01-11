@@ -10,24 +10,37 @@ function Add() {
     // give context
     const { setName , setCost , name , cost , color , setColor , handleSubmit} = useContext(InputContext);
 
+    // show alert
+    function Alert(){
+        document.getElementById('alert-s').style.display = 'block';
+        setTimeout(
+            ()=>{
+                document.getElementById('alert-s').style.display = 'none';
+            }
+            , 3000)
+    } 
     return (
         <div className="mt-4">
            
             <div className="jumbotron  jumbotronAdd text-white">
                      <h1 className="text-center  mb-4">Adding to Store</h1>
-                    <form onSubmit={(e)=>{handleSubmit(e) ; inputRef.current.focus();}}  className="mx-auto text-center">
+                    <form onSubmit={(e)=>{handleSubmit(e) ; inputRef.current.focus(); Alert()}}  className="mx-auto text-center">
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input ref={inputRef} required value={name} onChange={(e)=>setName(e.target.value)}  type="text" id="name" className="form-control" placeholder="enter name... "/>
+                                <input autocomplete="off" ref={inputRef} required value={name} onChange={(e)=>setName(e.target.value)}  type="text" id="name" className="form-control" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="cost">Cost</label>
-                                <input required value={cost} onChange={(e)=>setCost(e.target.value)} type="number" id="cost" className="form-control" placeholder="enter Cost... "/>
+                                <input autocomplete="off" required value={cost} onChange={(e)=>setCost(e.target.value)} type="number" id="cost" className="form-control" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="color">Color</label>
-                                <input required value={color} onChange={(e)=>setColor(e.target.value)} type="text" id="color" className="form-control" placeholder="enter color... "/>
+                                <input autocomplete="off" required value={color} onChange={(e)=>setColor(e.target.value)} type="text" id="color" className="form-control" />
                             </div>
+                            <div>
+                                <span id="alert-s" className="alert alert-red">Added successfully</span>
+                            </div>
+                            
                            
                         <button type="submit" className="btn btn-outline-primary btn-block btn- mt-4">Add </button>
                     </form>
