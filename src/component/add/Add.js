@@ -17,7 +17,7 @@ function Add() {
             ()=>{
                 document.getElementById('alert-s').style.display = 'none';
             }
-            , 3000)
+            , 2000)
     } 
     return (
         <div className="mt-4">

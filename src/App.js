@@ -10,6 +10,7 @@ import Buy from './component/buy/Buy';
 import PageNotFound from './component/pagenot/PageNotFound';
 import Add from './component/add/Add';
 import RemoveList from './component/remove/RemoveList';
+import GetBuy from './component/buy/GetBuy';
 
 function App() {
   
@@ -68,10 +69,8 @@ function App() {
   }
 
   
- // value list context
- const valueListContext = {
-   list
-  }
+ // get but mobile
+ 
 
  
 
@@ -89,6 +88,9 @@ function App() {
                           <Route exact path="/add" component={Add}/>
                           <Route exact path="/buy" component={Buy}/>
                           <Route exact path="/remove" component={RemoveList}/>
+                          <Route exact path="/buy/:index" render={props => (
+                           <GetBuy {...props} list={list} />
+                          )}/>
                           <Route  component={PageNotFound}/>
                       </Switch>
                       

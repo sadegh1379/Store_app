@@ -8,3 +8,7 @@
 #card-mobile{
     padding: 30px 5px;
 }
+
+#getBuy{
+    box-shadow:  0 0 50px rgb(187, 140, 39) inset;
+}

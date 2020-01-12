@@ -6,7 +6,7 @@ function Navbar() {
     return (
         <div>
             <nav className="navbar navbar-expand-md navbar-dark bg-primary">
-                <Link className="navbar-brand" to="/"><span className="fa  fa-shopping-cart"></span></Link>
+                <Link className="navbar-brand" to="/"><span className="fa  fa-mobile fa-2x"></span></Link>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -14,7 +14,7 @@ function Navbar() {
                 <div className="collapse navbar-collapse" id="navbarColor01">
                     <ul className="navbar-nav ">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/">Home <span className="fa fa-home"></span></Link>
+                                <Link className="nav-link" to="/"><span className="fa fa-home mr-1"></span>Home </Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="#">Features</Link>

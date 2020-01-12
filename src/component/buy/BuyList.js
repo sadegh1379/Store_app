@@ -50,7 +50,7 @@ function BuyList({name , cost , color , index}) {
                             <li className="list-group-item">Price : <span className="text-white">{cost}$</span></li>
                     </ul>
             <div className="card-body">
-                <Link to="/buy" className="card-link btn btn-outline-danger btn-block">Buy</Link>
+                <Link to={`buy/${index}`} className="card-link btn btn-outline-danger btn-block">Buy</Link>
             </div>
             <div className="card-footer text-muted">
                 2 days ago

@@ -1,11 +1,11 @@
 @keyframes myAni{
     from{
-        color:rgb(172, 70, 70);
-        transform: rotateZ(-50deg);
+        color:black;
+        /* transform: rotateZ(-50deg); */
     }
     to{
-        color:rgb(70, 70, 153);
-        transform: rotateZ(50deg);
+        color:white;
+        /* transform: rotateZ(50deg); */
        
     }
 }
