@@ -8,7 +8,7 @@ function Add() {
     const inputRef = useRef();
 
     // give context
-    const { setName , setCost , name , cost , color , setColor , handleSubmit} = useContext(InputContext);
+    const { setName , setCost , name , cost , color , setColor , handleSubmit , img , setImg} = useContext(InputContext);
 
     // show alert
     function Alert(){
@@ -27,15 +27,19 @@ function Add() {
                     <form onSubmit={(e)=>{handleSubmit(e) ; inputRef.current.focus(); Alert()}}  className="mx-auto text-center">
                             <div className="form-group">
                                 <label htmlFor="name">Name</label>
-                                <input autocomplete="off" ref={inputRef} required value={name} onChange={(e)=>setName(e.target.value)}  type="text" id="name" className="form-control" />
+                                <input autoComplete="off" ref={inputRef} required value={name} onChange={(e)=>setName(e.target.value)}  type="text" id="name" className="form-control" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="cost">Cost</label>
-                                <input autocomplete="off" required value={cost} onChange={(e)=>setCost(e.target.value)} type="number" id="cost" className="form-control" />
+                                <input autoComplete="off" required value={cost} onChange={(e)=>setCost(e.target.value)} type="number" id="cost" className="form-control" />
                             </div>
                             <div className="form-group">
                                 <label htmlFor="color">Color</label>
-                                <input autocomplete="off" required value={color} onChange={(e)=>setColor(e.target.value)} type="text" id="color" className="form-control" />
+                                <input autoComplete="off" required value={color} onChange={(e)=>setColor(e.target.value)} type="text" id="color" className="form-control" />
+                            </div>
+                            <div className="form-group">
+                                <label htmlFor="img">Image Url</label>
+                                <input autoComplete="off" required value={img} onChange={(e)=>setImg(e.target.value)} type="text" id="color" className="form-control" />
                             </div>
                             <div>
                                 <span id="alert-s" className="alert alert-red">Added successfully</span>

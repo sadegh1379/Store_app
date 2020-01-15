@@ -12,3 +12,10 @@
 #getBuy{
     box-shadow:  0 0 50px rgb(187, 140, 39) inset;
 }
+
+#add_cart_alert{
+    /* display: none; */
+    background-color: rgb(87, 143, 87);
+    color:white;
+    font-weight: bolder;
+}

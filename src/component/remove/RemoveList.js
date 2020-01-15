@@ -16,7 +16,7 @@ function RemoveList() {
               {
                   list.length > 0? list.map(
                       (lis , index)=><Remove index={index} name={lis.name} cost={lis.cost} color={lis.color} handleRemove={handleRemove}/>
-                  ) : <h1><i className="fa fa-meh-o text-primary mr-2"></i>There is nothing yet...</h1>
+                  ) : <h1><i className="fa fa-smile-o text-primary mr-2"></i>There is nothing yet...</h1>
               }
             </ul>
         </div>

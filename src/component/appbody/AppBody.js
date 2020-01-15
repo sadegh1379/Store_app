@@ -10,7 +10,7 @@ function AppBody() {
              <tbody>
             <tr>
                     <Link to="/add"><td><p>Add</p> <span className="fa fa-plus fa-3x"></span> </td></Link>
-                    <Link to="/buy"><td><p>Buy</p> <span className="fa fa-shopping-bag fa-3x"></span> </td></Link>
+                    <Link to="/buy"><td><p>Shopping</p> <span className="fa fa-shopping-bag fa-3x"></span> </td></Link>
             </tr>
             <tr>
                     <Link to="/remove"><td><p>Remove</p> <span className="fa fa-trash fa-3x"></span> </td></Link>

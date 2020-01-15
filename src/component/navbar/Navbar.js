@@ -17,7 +17,7 @@ function Navbar() {
                                 <Link className="nav-link" to="/"><span className="fa fa-home mr-1"></span>Home </Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="#">Features</Link>
+                                <Link className="nav-link" to="/cart"><span className="fa fa-shopping-basket mr-1"></span>Cart</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="#">Pricing</Link>

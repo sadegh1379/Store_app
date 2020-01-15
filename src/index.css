@@ -1,8 +1,19 @@
+@font-face{
+    font-family: 'BYEKAN';
+    src: url('./fonts/Yekan.eot');
+    
+}
 *{
     padding: 0;
     margin: 0;
+    /* font-family: 'BYEKAN'; */
 }
 html{
     scroll-behavior: smooth;
 }
+#head-text{
+    font-family: 'Abril Fatface', cursive;
+
+}
+
 
