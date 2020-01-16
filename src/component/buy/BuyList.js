@@ -10,7 +10,7 @@ function BuyList({name , cost , color , img , index}) {
         <div id="card-mobile" className="card mb-3">
   
             
-            <img className="mx-auto" style={{height: '200px', width: '70%', display: 'block'}} src={img} alt="mobile"/>
+            <img className="mx-auto" style={{height: '300px', width: '100%', display: 'block'}} src={img}  alt="mobile"/>
             
                     <ul className="list-group list-group-flush">
                             <li className="list-group-item">Name : <span className="text-white">{name}</span></li>
@@ -18,7 +18,7 @@ function BuyList({name , cost , color , img , index}) {
                             <li className="list-group-item">Price : <span className="text-white">{cost}$</span></li>
                     </ul>
             <div className="card-body">
-                <Link to={`buy/${index}`} className="card-link btn btn-outline-danger btn-block">Buy</Link>
+                <Link to={`buy/${index}`} className="card-link btn bg-dark btn-outline-secondary btn-block"> more and Buy</Link>
             </div>
             <div className="card-footer text-muted">
                 2 days ago

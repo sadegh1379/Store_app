@@ -21,6 +21,9 @@ function App() {
   const [color , setColor] = useState('')
   const [cost , setCost] = useState();
   const [img , setImg] = useState();
+  const [camera , setCamera] = useState('');
+  const [memory , setMemory] = useState('');
+  const [description , setDescription ] = useState('');
 
   // list state
   const [list , setList] = useState(getLocalStorage("mobileList"));
@@ -33,15 +36,16 @@ function App() {
 
    const handleSubmit = (e)=>{
     e.preventDefault();
-    const newList = [...list , {name , cost , color , img}];
+    const newList = [...list , {name , cost , color , img , memory , description , camera}];
     setList(newList);
     setMobileListInLocalStorage("mobileList" , newList);
     setName('');
     setCost('');
     setColor('');
     setImg('')
-
-    
+    setCamera('')
+    setMemory('');
+    setDescription('')
 
     
  }
@@ -71,11 +75,17 @@ function App() {
     setName,
     setImg,
     setCost,
+    setMemory,
+    setCamera,
     setColor,
+    setDescription,
+    description,
     color,
     name,
     cost,
-    img
+    img,
+    camera,
+    memory
   }
 
   

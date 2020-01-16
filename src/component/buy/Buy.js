@@ -20,7 +20,7 @@ function Buy() {
                list.length > 0? list.map(
                     (lis , index)=>{
                         return(
-                                <BuyList key={index} index={index} name={lis.name} cost={lis.cost} color={lis.color} img={lis.img} />
+                                <BuyList key={index} index={index} name={lis.name} cost={lis.cost} color={lis.color} img={lis.img} memory={lis.memory} description={lis.description} camera={lis.camera}/>
                         )
                     }
                 ) : <h6 className=" text-center text-white mx-auto"><i className="fa fa-smile-o text-primary mr-2"></i>There is nothing yet...</h6>

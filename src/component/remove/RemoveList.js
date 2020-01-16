@@ -15,7 +15,7 @@ function RemoveList() {
             <ul className="list-group text-white">
               {
                   list.length > 0? list.map(
-                      (lis , index)=><Remove index={index} name={lis.name} cost={lis.cost} color={lis.color} handleRemove={handleRemove}/>
+                      (lis , index)=><Remove index={index} name={lis.name} cost={lis.cost} color={lis.color} img={lis.img} handleRemove={handleRemove}/>
                   ) : <h1><i className="fa fa-smile-o text-primary mr-2"></i>There is nothing yet...</h1>
               }
             </ul>
