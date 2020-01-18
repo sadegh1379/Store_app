@@ -42,7 +42,7 @@ function RemoveList() {
                                 
                         </div>
             
-                    <table id="myTable" class="table tableremove table-dark table-responsive    text-center text-white">
+                    <table id="myTable" className="table tableremove table-dark table-responsive    text-center text-white">
                         <thead >
                             <tr className="table-info">
                                 <th  scope="col">#</th>
@@ -58,7 +58,7 @@ function RemoveList() {
                     <tbody >
                     {
                         list.length > 0? list.map(
-                            (lis , index)=><Remove index={index} name={lis.name} cost={lis.cost} color={lis.color} memory={lis.memory} camera={lis.camera} img={lis.img} handleRemove={handleRemove}/>
+                            (lis , index)=><Remove key={index} index={index} name={lis.name} cost={lis.cost} color={lis.color} memory={lis.memory} camera={lis.camera} img={lis.img} handleRemove={handleRemove}/>
                         ) : <h1 className="mt-4"><i className="fa fa-smile-o text-primary mr-2"></i>There is nothing yet...</h1>
                     }
                     </tbody>
