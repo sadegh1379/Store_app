@@ -1,16 +1,21 @@
 import React from 'react';
 import './removelist.css';
 
-function Remove({name , color , cost , img , handleRemove , index}) {
+function Remove({name , color , cost , img ,memory , camera, handleRemove , index}) {
     return (
-        <React.Fragment>
-            <li className="list-group-item  my-1 py-4">
-                {
-                    `Name: ${name} ${" --- "} Cost : ${ cost } ${" --- "} ${"   "} Color :${color}${" --- "} `
-                }<img className="rounded" style={{width:'40px'}} src={img} />
-                <button onClick={()=>handleRemove(index)} className="btn my-auto btn-outline-primary float-right"><i  className="fa fa-trash float-right text-white" style={{cursor:'pointer'}}></i></button>
-            </li> 
-        </React.Fragment>
+            <tr>
+                <th>{index}</th>
+                <td>{name}</td>
+                <td>{color}</td>
+                <td>{cost}</td>
+                <td>{memory}</td>
+                <td>{camera}</td>
+                <td><img className="rounded" style={{width:'40px'}} src={img} /></td>
+                <td  style={{cursor:'pointer'}} onClick={()=>handleRemove(index)}>
+                    <i id="remove-icon"  className="fa fa-trash-o fa-2x "></i>
+                </td>
+            </tr> 
+       
     )
 }
 

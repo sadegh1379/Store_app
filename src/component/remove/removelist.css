@@ -9,3 +9,20 @@
 .text-red{
     color:red;
 }
+
+.tableremove thead tr{
+   color:#181716;
+   font-weight: bolder;
+   
+   
+}
+
+.tableremove tbody tr td{
+   font-size: 20px;
+}
+
+#remove-icon:hover{
+    color:red;
+}
+
+

@@ -5,7 +5,7 @@ import './appbody.css';
 function AppBody() {
     return (
     <div id="table" className="mx-auto">       
-         <table className="table table-responsive table-bordered text-center">
+         <table className="table tablebody table-responsive table-bordered text-center">
              <thead></thead>
              <tbody>
             <tr>
